@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cryptolert",
+  "description": "Get an alert in your browser whenever a cryptocoin reaches a certain price",
+  "version": "1.0",
+  "author": "twitter.com/r0bbot",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "https://api.coinmarketcap.com/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}

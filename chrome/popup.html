@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cryptolert</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+            width: 700px;
+        }
+        td {
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form id="cryptolert-form">
+        <table id="coins-table">
+            <thead>
+                <tr>
+                    <td>Coin Name</td>
+                    <td>Less Than</td>
+                    <td>More Than</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" name="coin" /></td>
+                    <td><input type="text" name="less" /></td>
+                    <td><input type="text" name="more" /></td>
+                    <td><button type="submit" value="add">Add</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
+
